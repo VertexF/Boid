@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.14.0)
 
 project(Boid 
-		VERSION 0.0.0
-		LANGUAGES CXX
-		DESCRIPTION "Boid game")
-		
+        VERSION 0.0.0
+        LANGUAGES CXX
+        DESCRIPTION "Boid game")
+        
 #Sets ups the module path to work with the a custom on so the defualt CMake modules work.
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/modules")
 list(APPEND CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}../../../glew-2.1.0/")

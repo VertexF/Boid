@@ -72,8 +72,6 @@ void Shader::openGLSetUp()
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0);
 
-    //createShader(makeVertexShader(), makeFragementShader());
-
     ShaderSources sources = parseShader("res/Shader.shader");
     createShader(sources.vertexSource, sources.fragementSource);
 

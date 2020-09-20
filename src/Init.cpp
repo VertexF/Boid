@@ -7,13 +7,14 @@ namespace util
 Application::Application(const std::string title, int w, int h) : 
     _title(title), _width(w), _height(h)
 {
-    
 }
 
+/******************************************************************************/
+//! @brief The setup of the application.
 void Application::setup()
 {
     //This sets up what openGL version we are going to use, in 
-// this case it's 3.3 that why it say that.
+    // this case it's 3.3 that why it say that.
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
